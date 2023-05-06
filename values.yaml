@@ -8,6 +8,8 @@ image:
 
 agent:
   tags: "role=agent"
+  externalSecretName: "buildkite-agent"
+  externalSecretTokenKey: "token"
 
 enableHostDocker: false
 
