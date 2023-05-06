@@ -1,0 +1,11 @@
+repositories:
+  - name: buildkite
+    url: https://buildkite.github.io/charts/
+
+releases:
+  - name: buildkite-agent
+    namespace: buildkite
+    chart: buildkite/agent
+    version: 0.6.2
+    values:
+      - values.yaml
