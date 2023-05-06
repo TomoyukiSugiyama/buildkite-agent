@@ -1,0 +1,15 @@
+replicaCount: 1
+
+image:
+  repository: buildkite/agent
+  # Note that by default we use appVersion to get image tag version
+  # tag:
+  pullPolicy: IfNotPresent
+
+agent:
+  tags: "role=agent"
+
+enableHostDocker: false
+
+dind:
+  enabled: true
